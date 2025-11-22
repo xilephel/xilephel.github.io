@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="/images/Character_Aventurine_Eidolon_1.webp" alt="Gallery Image 1">
+    <img src="/images/Character_Aventurine_Eidolon_2.webp" alt="Gallery Image 2">
+    <img src="/images/Character_Aventurine_Eidolon_3.webp" alt="Gallery Image 3">
+    <img src="/images/Character_Aventurine_Eidolon_4.webp" alt="Gallery Image 4">
+    <img src="/images/Character_Aventurine_Eidolon_5.webp" alt="Gallery Image 5">
+    <img src="/images/Character_Aventurine_Eidolon_6.webp" alt="Gallery Image 6">
+  </div>
+</body>
+
+</html>
