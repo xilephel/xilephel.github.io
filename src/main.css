@@ -16,6 +16,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font: bold 16px monospace;
+  color: #747e2e;
+  margin: 0;
+}
+
 p {
   font: 18px monospace;
   color: #3e4128;
@@ -53,16 +59,27 @@ p {
   user-select: none;
 }
 
-.container {
+.containerHeaders {
   display: flex;
 }
 
-.container h2 {
-  margin: 0px 20px 0px 20px;
+.containerHeaders h2 {
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
-.container div {
+.containerBoxes div {
   background-color: #ccd672;
   border-radius: 10px;
   padding: 20px;
+  margin: 0% 2% 0% 2%;
+}
+
+#interestBox {
+  margin-bottom: 5%;
+  width: 300px;
+  background-color: #ccd672;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 20px 10px 0px;
 }
