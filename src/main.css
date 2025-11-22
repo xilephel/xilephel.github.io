@@ -10,6 +10,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font: bold 24px monospace;
+  color: #3e4128;
+  margin: 0;
+}
+
 p {
   font: 18px monospace;
   color: #3e4128;
@@ -28,19 +34,35 @@ p {
   margin-bottom: 3%;
   text-align: center;
   width: max-content;
-  ;
+  user-select: none;
 }
 
 #aboutBox {
   width: auto;
-  padding-left: 30px;
+  padding-top: 170px;
+  padding-left: 20px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   margin-bottom: 3%;
   border-radius: 10px;
   background-color: #b2b49f;
   background-image: url(/assets/Screenshot\ 2024-04-30\ 210409.png);
   background-size: cover;
   background-position-y: 30%;
-  background-blend-mode: overlay
+  background-blend-mode: overlay;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+}
+
+.container h2 {
+  margin: 0px 20px 0px 20px;
+}
+
+.container div {
+  background-color: #ccd672;
+  border-radius: 10px;
+  padding: 20px;
 }
