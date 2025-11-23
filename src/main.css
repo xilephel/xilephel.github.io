@@ -23,7 +23,7 @@ h3 {
 }
 
 p {
-  font: 18px monospace;
+  font: 16px monospace;
   color: #3e4128;
   margin: 0;
 }
@@ -43,7 +43,9 @@ p {
   user-select: none;
 }
 
-#aboutBox {
+#introBox {
+  display: flex;
+  flex-direction: column;
   width: auto;
   padding-top: 170px;
   padding-left: 20px;
@@ -61,25 +63,40 @@ p {
 
 .containerHeaders {
   display: flex;
+  justify-content: space-between;
 }
 
 .containerHeaders h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
-.containerBoxes div {
-  background-color: #ccd672;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0% 2% 0% 2%;
+.containerBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#interestBox {
-  margin-bottom: 5%;
+#interestsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#interestsContainer h3 {
   width: 300px;
   background-color: #ccd672;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
   margin: 0px 20px 10px 0px;
+}
+
+#aboutBox {
+  /* display: flex;
+  flex-direction: row;
+  width: auto; */
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  background-color: #ccd672;
+  user-select: none;
 }
