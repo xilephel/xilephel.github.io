@@ -9,7 +9,7 @@
 
 .containerRows {
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
   align-items: center;
 }
 
@@ -19,7 +19,9 @@
   align-items: center;
 }
 
+
 // the good stuff
+
 
 #header {
   .containerRows;
@@ -39,4 +41,29 @@
   color: white;
   text-align: center;
   user-select: none;
+}
+
+#banner img {
+  border-radius: 2px;
+  margin: 10px 0px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: unset;
+  aspect-ratio: 8 / 3;
+}
+
+#mainContainer {
+  .containerRows;
+  justify-content: space-between;
+}
+
+#foldersContainer {
+  .containerRows;
+  justify-content: space-between;
+}
+
+#profileContainer {
+  .containerColumns;
+  flex-flow: wrap column;
 }

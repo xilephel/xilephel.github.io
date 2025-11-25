@@ -1,3 +1,25 @@
+:root {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0% 17% 0% 17%;
+}
+
+h1 {
+  font: bold 30px monospace;
+  color: #3e4128;
+  display: inline-block;
+}
+
+h2 {
+  font: 25px monospace;
+  color: #3e4128;
+  display: inline-block;
+}
+
+h3 {
+  font: 20px monospace;
+  color: #d3d4ce;
+  display: inline-block;
 }
