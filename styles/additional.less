@@ -1,0 +1,41 @@
+.greenBox {
+  background-color: #ccd672;
+  border-radius: 2px;
+  width: max-content;
+  height: max-content;
+}
+
+.containerRows {
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+}
+
+.containerColumns {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+
+#header {
+  .containerRows;
+  height: 50px;
+  justify-content: space-between;
+
+  border-style: solid;
+  border-color: aqua;
+}
+
+#header img {
+  width: auto;
+  height: inherit;
+}
+
+#usernameBox {
+  .greenBox;
+  padding: 4px 5px 5px 6px;
+  font: bold 16px monospace;
+  color: white;
+  text-align: center;
+  user-select: none;
+}
