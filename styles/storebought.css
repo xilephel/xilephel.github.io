@@ -3,7 +3,7 @@
 }
 
 body {
-  padding: 0% 17% 0% 17%;
+  padding: 0% 20% 0% 20%;
 }
 
 h1 {
@@ -22,4 +22,14 @@ h3 {
   font: 20px monospace;
   color: #d3d4ce;
   display: inline-block;
+}
+
+p {
+  font: 16px monospace;
+  color: #ccd672;
+}
+
+b {
+  font: monospace;
+  color: #3e4128;
 }
