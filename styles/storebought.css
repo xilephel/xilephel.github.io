@@ -7,13 +7,8 @@
 body {
   padding: 0vw 25vw 0vw 25vw;
   margin: 0;
+  background-color: #f3f2e5;
 }
-
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    padding: 0vw 15vw 0vw 15vw;
-  }
-} */
 
 @media only screen and (max-width: 800px) {
   body {
@@ -23,17 +18,17 @@ body {
 
 h1 {
   font: bold 2.5vw monospace;
-  color: #555a2e;
+  color: #131520;
 }
 
 h2 {
   font: 1.5vw monospace;
-  color: #aab359;
+  color: #464968;
 }
 
 h3 {
   font: 1.2vw monospace;
-  color: #d3d4ce;
+  color: #dddbc7;
 }
 
 p {
@@ -45,7 +40,7 @@ p {
 
 b {
   font: monospace;
-  color: #555a2e;
+  color: #131520;
 }
 
 hr {
@@ -61,7 +56,7 @@ mark {
 }
 
 a:link {
-  color: #ccd672;
+  color: #888eaa;
   margin: 0vw 0vw 0vw 0vw;
   display: inline;
   background-color: transparent;
@@ -69,9 +64,9 @@ a:link {
 }
 
 a:visited {
-  color: #d2d893;
+  color: #dddbc7;
 }
 
 a:hover {
-  color: #aab359;
+  color: #464968;
 }
