@@ -48,7 +48,7 @@ b {
 
 hr {
   border: none;
-  height: 0.8px;
+  height: 0.9px;
   background-color: #e2e4cc;
   align-self: center;
 }
@@ -67,7 +67,7 @@ a:link {
 }
 
 a:visited {
-  color: #e8ecc0;
+  color: #d2d893;
 }
 
 a:hover {
