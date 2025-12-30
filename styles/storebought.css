@@ -53,6 +53,11 @@ hr {
   align-self: center;
 }
 
+mark {
+  background-color: #e8ecc0;
+  color: #aab359;
+}
+
 a:link {
   color: #ccd672;
   margin: 0vw 0vw 0vw 0vw;
