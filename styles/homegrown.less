@@ -19,6 +19,81 @@
   // align-items: center;
 }
 
+.mainText {
+  color: #ccd672;
+  font: 1.3vw monospace;
+
+  @media only screen and (max-width: 1000px) {
+    font: 1.6vw monospace;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font: 2.2vw monospace;
+  }
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font: 2.7vw monospace;
+  }
+}
+
+.darkestText {
+  // h1
+  font: bold 2.5vw monospace;
+  color: #555a2e;
+
+  @media only screen and (max-width: 1000px) {
+    font: bold 3vw monospace;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font: bold 4vw monospace;
+  }
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font: bold 4.2vw monospace;
+  }
+}
+
+.midtoneText {
+  // h2
+  font: 1.5vw monospace;
+  color: #aab359;
+
+  @media only screen and (max-width: 1000px) {
+    font: 2vw monospace;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font: 2.5vw monospace;
+  }
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font: 3.8vw monospace;
+  }
+}
+
+.lightestText {
+  // h3
+  font: 1.2vw monospace;
+  color: #d3d4ce;
+
+  @media only screen and (max-width: 1000px) {
+    font: 1.7vw monospace;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font: 2vw monospace;
+  }
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font: 2.5vw monospace;
+  }
+}
+
 
 // the good stuff
 
@@ -29,18 +104,43 @@
   justify-content: space-between;
 }
 
-#header img {
-  width: 3vw;
-  height: inherit;
-}
-
 #usernameBox {
   .greenBox;
   padding: 0.5vw 1vw 0.5vw 1vw;
   font: bold 1.2vw monospace;
+
+  @media only screen and (max-width:1000px) {
+    font: bold 1.7vw monospace;
+  }
+
+  @media only screen and (max-width:750px) {
+    font: bold 2vw monospace;
+  }
+
+  @media only screen and (max-width:500px) {
+    font: bold 2.5vw monospace;
+  }
+
   color: white;
   text-align: center;
   user-select: none;
+}
+
+#header img {
+  width: 3vw;
+  height: inherit;
+
+  @media only screen and (max-width:1000px) {
+    width: 4vw;
+  }
+
+  @media only screen and (max-width:750px) {
+    width: 4.2vw;
+  }
+
+  @media only screen and (max-width:500px) {
+    width: 5vw;
+  }
 }
 
 #banner img {
@@ -51,6 +151,10 @@
   width: 100%;
   height: unset;
   aspect-ratio: 11 / 3;
+
+  @media only screen and (max-width: 500px) {
+    aspect-ratio: 11 / 2;
+  }
 }
 
 #mainContainer {
@@ -59,10 +163,18 @@
   align-items: flex-start;
   flex-wrap: nowrap;
   margin: 0.9vw 0vw 0vw 0vw;
-  height: 15vw;
+  height: 17vw;
+
+  @media only screen and (max-width: 1000px) {
+    height: 18vw;
+  }
 
   @media only screen and (max-width: 750px) {
-    height: 17.5vw;
+    height: 25vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    height: 33vw;
   }
 }
 
@@ -75,14 +187,14 @@
 #aboutBox {
   align-self: flex-start;
   width: 65%;
-  height: 13.5vw;
 
-  @media only screen and (max-width: 750px) {
-    height: 16vw;
+  @media only screen and (max-width: 500px) {
+    // mobile
+    width: 100%;
   }
 
   margin: 0px 0px 0px 0px;
-  padding: 0vw 1.2vw 0vw 1.2vw;
+  padding: 1.2vw 1.2vw 1.2vw 1.2vw;
   border-radius: 2px;
   outline-style: solid;
   outline-width: 1px;
@@ -91,22 +203,17 @@
 }
 
 #aboutBox p {
+  .mainText;
   line-height: 1.6vw;
+  margin: 0vw 0vw 0vw 0vw;
   color: #ccd672;
   font: 1.3vw monospace;
-
-  @media only screen and (max-width: 1000px) {
-    font: 1.5vw monospace;
-  }
-
-  @media only screen and (max-width: 750px) {
-    font: 1.75vw monospace;
-  }
 }
 
 #profileBox {
   .containerColumns;
-  width: 30%;
+  width: 35%;
+
   height: max-content;
   margin: 0px 3px 0px 0px;
   padding: 10px 0px 0px 0px;
@@ -124,6 +231,13 @@
     bottom: 17vw;
   }
 
+  @media only screen and (max-width: 500px) {
+    // mobile
+    width: 30%;
+    position: relative;
+    bottom: 13vw;
+    margin: 0vw 0vw 0.9vw 0.9vw;
+  }
 }
 
 #profileBox img {
@@ -145,22 +259,35 @@
 
 #profileBox a h1 {
   // name
+  .darkestText;
   user-select: none;
   margin: 0vw 0vw 0vw 0vw;
 }
 
 #profileBox a h2 {
   // prn
+  .midtoneText;
   user-select: none;
   margin: 0vw 0vw 0vw 0vw;
   position: relative;
   bottom: 0.1vw;
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font-size: 2.5vw;
+  }
 }
 
 #profileBox h3 {
   // user
+  .lightestText;
   user-select: none;
   margin: 0vw 0vw 0vw 1.5vw;
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    font-size: 1.7vw;
+  }
 }
 
 #profileBox p {
@@ -174,27 +301,58 @@
   padding: 0vw 0vw 0vw 0vw;
 }
 
-#links p a {
+#socialLinks p a {
+  .mainText;
   display: inline;
   margin: 0vw 0vw 0vw 0vw;
   padding: 0vw 0vw 0vw 0vw;
+
+  @media only screen and (max-width: 500px) {
+    //mobile
+    display: block;
+    padding: 0.2vw 0vw 0vw 0vw;
+    font-size: 2.2vw;
+  }
 }
 
+
 #interestsSection h1 {
+  .darkestText;
   font: bold 1.9vw monospace;
   margin: 0vw 0vw 0vw 0vw;
 }
 
+#interestsSection h2 {
+  .midtoneText;
+  font: 1.5vw monospace;
+  margin: 1vw 0vw 0vw 0vw;
+}
+
 #interestsSection h3 {
+  .lightestText;
   font: 1.2vw monospace;
   text-align: center;
   margin: 1vw 0vw 1vw 0vw;
 }
 
 #interestsSection p {
+  .mainText;
   line-height: 1.65vw;
   text-align: center;
-  margin: 1vw 0vw 0vw 0vw;
+  margin: 0.5vw 1.5vw 2.5vw 1.5vw;
+
+  @media only screen and (max-width: 1000px) {
+    margin: 0.6vw 1.5vw 2.8vw 1.5vw;
+  }
+
+  @media only screen and (max-width: 750px) {
+    margin: 0.7vw 1.5vw 3.5vw 1.5vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    // mobile
+    margin: 0.8vw 1.5vw 4vw 1.5vw;
+  }
 }
 
 #interestsSection a {
