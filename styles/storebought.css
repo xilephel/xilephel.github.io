@@ -31,6 +31,12 @@ h3 {
   color: #dddbc7;
 }
 
+h4 {
+  /* whispering.... */
+  font: 0.9vw monospace;
+  color: #b5aa80;
+}
+
 p {
   font: 1.2vw monospace;
   line-height: 1.6vw;
