@@ -66,6 +66,8 @@
 // the good stuff
 
 
+// main page
+
 #header {
   .containerRows;
   margin: 0.9vw 0vw 0vw 0vw;
@@ -113,7 +115,7 @@
   }
 }
 
-#mainContainer {
+#mainContainerRows {
   .containerRows;
   justify-content: space-between;
   align-items: flex-start;
@@ -126,7 +128,7 @@
   }
 }
 
-#mainContainer hr {
+#mainContainerRows hr {
   width: 88%;
   align-self: center;
   margin: 0.8vw 0vw 0.7vw 0vw;
@@ -248,17 +250,16 @@
   }
 }
 
-
 #interestsSection h1 {
   .darkestText;
   font: bold 1.9vw monospace;
-  margin: 0vw 0vw 0vw 0vw;
+  margin: 0.5vw 0vw 0vw 0vw;
 }
 
 #interestsSection h2 {
   .darkestText;
   font: 1.5vw monospace;
-  margin: 1vw 0vw 0vw 0vw;
+  margin: 0vw 0vw 0vw 0vw;
 }
 
 #interestsSection h3 {
@@ -282,4 +283,66 @@
 
 #interestsSection a {
   white-space: nowrap;
+}
+
+
+// subpages
+
+#returnFooter {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-bottom: 0.5vw;
+  background-color: #bbb8c4;
+  border-radius: 2px;
+}
+
+#returnFooter a {
+  .mainText;
+  color: #464968;
+  display: block;
+  text-align: center;
+  padding: 0.2vw 0vw 0.2vw 0vw;
+
+}
+
+#mainContainerColumns {
+  .containerColumns;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 0.5vw 0vw 0.5vw 0vw;
+  height: 17vw;
+
+  @media only screen and (max-width: 800px) {
+    height: 34vw;
+  }
+}
+
+#mainContainerColumns hr {
+  width: 88%;
+  align-self: center;
+  margin: 0.8vw 0vw 0.7vw 0vw;
+}
+
+#borderBox {
+  align-self: flex-start;
+  width: 100%;
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 0vw 0vw 1vw 0vw;
+  border-radius: 2px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #b5aa80;
+  text-align: justify;
+}
+
+#borderBox p {
+  .mainText;
+  line-height: 1.6vw;
+  margin: 0vw 0vw 0vw 0vw;
 }
