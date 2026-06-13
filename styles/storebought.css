@@ -5,14 +5,14 @@
 }
 
 body {
-  padding: 0vw 25vw 0vw 25vw;
+  padding: 0vw 25vw 3vw 25vw;
   margin: 0;
   background-color: #f3f2e5;
 }
 
 @media only screen and (max-width: 800px) {
   body {
-    padding: 0vw 3vw 0vw 3vw;
+    padding: 0vw 3vw 5vw 3vw;
   }
 }
 
